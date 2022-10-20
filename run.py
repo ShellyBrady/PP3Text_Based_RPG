@@ -1,8 +1,9 @@
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
+
+
 def choice1():
-    import time
     print("""Welcome to Your Next Adventure!
         Every decision you make along the 
         way will determine how your story goes.
@@ -14,7 +15,7 @@ def choice1():
         """)
     
     c1 = input()
-    time.sleep(2)
+    data_str = input ("Enter your data here:")
     ans = 'one'
     while (ans == 'one'):
         if (c1() == 'stay'):
