@@ -22,12 +22,12 @@ def game():
         print("Maybe tomorrow. It looks like it might rain.")
     else:
         print("Type only 'stay' or 'go':")
-
-if start == True:
-    print("You head for the quiet county road at the end of your drive.")   
-    print("Left will bring you through a hilly narrow road surrounded only by fields")     
-    print("Right brings you through a quiet village to the busy main road")
-    choice=input("Choose to go 'left' or 'right':")
+        
+    if start == True:
+            print("You head for the quiet county road at the end of your drive.")   
+            print("Left will bring you through a hilly narrow road surrounded only by fields")     
+            print("Right brings you through a quiet village to the busy main road")
+            choice=input("Choose to go 'left' or 'right':")
 
 if choice == 'left':  
     choice1 = True
@@ -37,7 +37,7 @@ elif choice == 'right':
 else:
     print("Type only 'left' or 'right':")      
 
-    
+
 
       
     
