@@ -45,23 +45,15 @@ while True:
         print("\nWhen your muscles burn, you stop to catch your breath.")
         print("\nJust then, you hear a rustling from the trees nearby.")
         print("\nYour heart pounds as you see a bear lumbering towards you!")
-        break
+        choice3 = input("Type 'run' to run away, or 'stand' to stand still:")
+
     if choice2 == 'right':
         print("\nRight you are! Keep a steady pace.\n")
         print("\nAt the end of the sleepy street you reach the main road.\n")
         print("Cars whizz past as you jog on to the hard shoulder.\n")
-        print("\nJust then, a white van pulls quickly up in front of you.")
-        break
+        print("\nSuddenly, a white van screeches to a halt in front of you\n")
+        choice3 = input("Type 'jog' to go on or 'talk' to hear what he wants:")
     else:
         choice2 = input("Choose to go 'left' or 'right':")
 
-# Choice 3
-    if choice2 == 'left':
-        print("\nRun away or stand still?:\n")
-        choice3 = input("run" or "stand")
-    if choice2 == 'right':
-        print("\nJog on or talk to the driver?\n")
-        choice3 = input("Type 'jog' or 'talk' /n")
-    else:
-        input("Type 'jog' or 'talk':")
 
