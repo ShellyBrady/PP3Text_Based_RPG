@@ -1,4 +1,7 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
+choice1 = ['no', 'yes']
+choice2 = ['left', 'right']
+choice3 = ['run', 'stand', 'jog', 'talk']
 
 # Opening intro and input name
 print("""Welcome to Your Next Adventure!\n
