@@ -1,21 +1,25 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
+import time
+
 choice1 = ['no', 'yes']
 choice2 = ['left', 'right']
 choice3 = ['run', 'stand', 'jog', 'talk']
 
 # Opening intro and input name
-print("""Welcome to Your Next Adventure!\n
-Every decision you make along the way will determine how your story goes.\n""")
-print()
-name = input("What shall I call you?\n")
+print("Welcome to Your Next Adventure!\n"
+    "Every decision you make along the way will determine how your story goes.\n")
+time.sleep(2)
+name1 = input("What shall I call you?\n")
 
 # Greeting and first choice
-print("\nWell hello! Nice to meet you, " + name)
-print("""\nGood news! Its time for your monthly guilt-induced jog.\n
-Put on your barely worn runners and head for the door.\n
-Are you ready to go?\n""")
+print("\nWell hello! Nice to meet you, " + name1)
+time.sleep(1)
+print("\nGood news" + name1 + "! Its time for your monthly guilt-induced jog."
+    "\nPut on your barely worn runners and head for the door.\n"
+    "Are you ready to go?")
+time.sleep(1)
 
-# Action taken depending on input
+# Action taken depending on input for choice1
 choice1 = input("Type 'no' or type 'yes':")
 
 while True:
@@ -29,6 +33,8 @@ while True:
 
     if choice1 == 'no':
         print("\nMaybe tomorrow. It looks like it might rain.\n")
+        time.sleep(1)
+        print("\nGame Over!")
         quit()
         break
     else:
@@ -45,6 +51,7 @@ while True:
         print("\nWhen your muscles burn, you stop to catch your breath.")
         print("\nJust then, you hear a rustling from the trees nearby.")
         print("\nYour heart pounds as you see a bear lumbering towards you!")
+        time.sleep(1)
         choice3 = input("Type 'run' to run away, or 'stand' to stand still:")
 
     if choice2 == 'right':
@@ -52,6 +59,7 @@ while True:
         print("\nAt the end of the sleepy street you reach the main road.\n")
         print("Cars whizz past as you jog on to the hard shoulder.\n")
         print("\nSuddenly, a white van screeches to a halt in front of you\n")
+        time.sleep(1)
         choice3 = input("Type 'jog' to go on or 'talk' to hear what he wants:")
     else:
         choice2 = input("Choose to go 'left' or 'right':")
