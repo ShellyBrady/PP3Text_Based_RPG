@@ -98,6 +98,7 @@ while True:
 
 
 # choice3_left input consequences
+choice3_left = input("Type 'run' to run away, or 'stand' to stand:")
 while True:
 
     if choice3_left == 'run':
@@ -118,7 +119,8 @@ while True:
 
         choice3_left = input("Type 'run' to run away, or 'stand' to stand:")
 
-
+# choice3_right consequences
+choice3_right = input("Type 'jog' to go on or 'talk' to talk to him:")
 while True:
 
     if choice3_right == 'jog':
