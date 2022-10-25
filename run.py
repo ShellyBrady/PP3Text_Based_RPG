@@ -80,7 +80,7 @@ while True:
         print("\nJust then, you hear a rustling from the trees nearby.")
         print("\nYour heart pounds as you see a bear lumbering towards you!")
         time.sleep(1)
-        choice3_left = input("Type 'run' to run away, or 'stand' to stand:")
+        print(input("Type 'run' to run away, or 'stand' to stand:"))
         break
 
     if choice2 == 'right':
@@ -91,7 +91,7 @@ while True:
         time.sleep(1)
         print("\nSuddenly, a white van screeches to a halt in front of you\n")
         time.sleep(1)
-        choice3_right = input("Type 'jog' to go on or 'talk' to talk to him:")
+        print(input("Type 'jog' to go on or 'talk' to talk to him:"))
         break
     else:
         print(input("Choose to go 'left' or 'right':"))
