@@ -10,6 +10,26 @@ choice1 = ['no', 'yes']
 choice2 = ['left', 'right']
 choice3 = ['run', 'stand', 'jog', 'talk']
 
+
+# Game-over function
+def game_over():
+
+    print("If only you had made different choices today!")
+    print("\n*********GAME OVER********\n")
+    quit()
+
+
+# Winning is getting home safe in one piece!
+
+def you_win():
+
+    print("/nYou run for home faster than you have ever run before")
+    print("You fling open the door and kick your runners off with relief.")
+    print("Congratulate yourself for making it through another monthly jog.\n")
+    print("/n********YOU SURVIVED********/n")
+    quit()
+
+
 # Opening intro and input name
 print("****Welcome to Your Next Adventure!****\n")
 time.sleep(1)
@@ -59,7 +79,7 @@ while True:
         print("\nJust then, you hear a rustling from the trees nearby.")
         print("\nYour heart pounds as you see a bear lumbering towards you!")
         time.sleep(1)
-        print(input("Type 'run' to run away, or 'stand' to stand still:"))
+        choice3 = input("Type 'run' to run away, or 'stand' to stand still:")
 
     if choice2 == 'right':
         print("\nRight you are! Keep a steady pace.\n")
@@ -72,24 +92,6 @@ while True:
         choice3 = input("Type 'jog' to go on or 'talk' to hear what he wants:")
     else:
         print(input("Choose to go 'left' or 'right':"))
-
-
-# game over function
-def game_over():
-
-    print("If only you had made different choices today!")
-    print("\n*********GAME OVER********\n")
-    quit()
-
-
-# Winning is getting home safe in one piece!
-
-def you_win():
-
-    print("/nYou run for home faster than you have ever run before")
-    print("You fling open the door and kick your runners off with relief.")
-    print("Congratulate yourself for making it through another monthly jog.\n")
-    print("/n********YOU SURVIVED********/n")
 
 
 # choice3 input consequences
