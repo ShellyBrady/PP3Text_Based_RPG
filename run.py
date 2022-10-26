@@ -17,18 +17,16 @@ def play_again():
 # Game-over function
 def game_over():
     print("If only you had made different choices today!")
-    print("\n*********GAME OVER********\n")
+    print("*********GAME OVER********")
     play_again()
 
 
 # Winning is getting home safe in one piece!
-
-
 def you_win():
-    print("/nYou run for home faster than you have ever run before")
+    print("\nYou run for home faster than you have ever run before")
     print("You fling open the door and kick your runners off with relief.")
     print("Congratulate yourself for making it through another monthly jog.\n")
-    print("/n********YOU SURVIVED********/n")
+    print("\n********YOU SURVIVED********\n")
     play_again()
 
 
@@ -53,8 +51,7 @@ def intro():
 def choice1_result():
     choice1 = ['no', 'yes']
     choice1 = print("Type 'no' or type 'yes':")
-
-# Action taken depending on input for choice1
+    # Action taken depending on input for choice1
     while True:
 
         if choice1 == 'yes':
@@ -62,13 +59,11 @@ def choice1_result():
             print("\nHead for the quiet county road at the end of your drive.")
             print("Left brings you to hilly narrow road surrounded by fields")
             print("Right brings you to a quiet village to the busy main road")
-
+            break
         if choice1 == 'no':
             print("\nMaybe tomorrow. It looks like it might rain.\n")
             time.sleep(1)
-            print("\nGame Over!")
-            play_again()
-
+            game_over()
         else:
             choice1 = input("Type 'no' or type 'yes':")
 
