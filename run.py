@@ -125,3 +125,5 @@ def my_game():
                 game_over()
             else:
                 choice3 = input("Type 'jog' to go on or 'talk' to talk: ")
+
+my_game()                
