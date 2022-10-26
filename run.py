@@ -8,6 +8,7 @@ def play_again():
     repeat = ['play', 'quit']
     repeat = input("Type 'play' to play again or 'quit' to give up:")
     if repeat == 'play':
+        choice1_result()
         my_game()
     if repeat == 'quit':
         print('Thank you for playing. Goodbye!')
@@ -50,10 +51,10 @@ def intro():
 # choice1
 def choice1_result():
     choice1 = ['no', 'yes']
+
     choice1 = print("Type 'no' or type 'yes':")
     # Action taken depending on input for choice1
     while True:
-
         if choice1 == 'yes':
             print("\nBetter get going before it starts to get dark!\n")
             print("\nHead for the quiet county road at the end of your drive.")
@@ -75,7 +76,7 @@ def my_game():
     choice3 = ['run', 'stand', 'jog', 'talk']
 
     # Action dependant on Choice 2 input
-    choice2 = input("Choose to go 'left' or 'right':")
+    choice2 = input("Choose to go 'left' or 'right': ")
     while True:
 
         if choice2 == 'left':
@@ -123,7 +124,7 @@ def my_game():
             else:
                 choice3 = input("Type 'jog' to go on or 'talk' to talk: ")
         else:
-            choice2 = input("Type 'no' or type 'yes':")
+            choice2 = input("Choose to go 'left' or 'right': ")
 
 
 intro()
