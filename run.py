@@ -73,12 +73,14 @@ def choice1_result():
 
 
 def my_game():
-    # Choice 2
+
+    # Choice lists
     choice2 = ['left', 'right']
     choice3 = ['run', 'stand', 'jog', 'talk']
     choice2 = input("Choose to go 'left' or 'right':")
-# Action dependant on Choice 2 input
-    intro()
+    # call choice1
+    choice1_result()
+    # Action dependant on Choice 2 input
     while True:
 
         if choice2 == 'left':
@@ -126,4 +128,8 @@ def my_game():
             else:
                 choice3 = input("Type 'jog' to go on or 'talk' to talk: ")
 
-my_game()                
+
+intro()
+
+
+my_game()
