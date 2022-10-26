@@ -8,8 +8,7 @@ import time
 # Choice lists
 choice1 = ['no', 'yes']
 choice2 = ['left', 'right']
-choice3_left = ['run', 'stand']
-choice3_right = ['jog', 'talk']
+choice3 = ['run', 'stand', 'jog', 'talk']
 
 
 # Game-over function
@@ -80,9 +79,22 @@ while True:
         print("\nJust then, you hear a rustling from the trees nearby.")
         print("\nYour heart pounds as you see a bear lumbering towards you!")
         time.sleep(1)
-        print(input("Type 'run' to run away, or 'stand' to stand:"))
-        break
-
+        choice3 = input("Type 'run' to run away, or 'stand' to stand still:")
+        if choice3 == 'run':
+            print("You turn and run for home but the hills slow you down")
+            print("The bear gains on you with surprising speed!")
+            print("You become the bear's dinner")
+            game_over()
+            break
+        if choice3 == 'stay':
+            print("Every inch of your being screams at you to run.")
+            print("You remember from somewhere that you need to be still.")
+            print("You can feel the bear's breath on your neck!")
+            print("When you think it's curtains for you, the bear ambles away")
+            you_win()
+            break
+        else:
+            choice3 = input("Type 'run' to run away, or 'stand' to stand:")
     if choice2 == 'right':
         print("\nRight you are! Keep a steady pace.\n")
         time.sleep(1)
@@ -91,50 +103,19 @@ while True:
         time.sleep(1)
         print("\nSuddenly, a white van screeches to a halt in front of you\n")
         time.sleep(1)
-        print(input("Type 'jog' to go on or 'talk' to talk to him:"))
-        break
+        choice3 = input("Type 'jog' to go on or 'talk' to talk to him:")
+        if choice3 == 'jog':
+            print("You watch too much true crime to get close to that van!")
+            print("The driver door swings open as you jog past.")
+            print("A man with a crazed look in his eyes jumps out!")
+            you_win()
+        if choice3 == 'talk':
+            print("You approach the driver's door just as he flings it open!")
+            print("You jump back but the driver is too fast for you.")
+            print("He grabs you and pulls you into the van with sudden speed!")
+            print("The homicidal maniac takes you back to his murder-house.")
+            game_over()
+        else:
+            choice3 = input("Type 'jog' to go on or 'talk' to talk to him:")
     else:
         print(input("Choose to go 'left' or 'right':"))
-
-
-# choice3_left input consequences
-choice3_left = ['run', 'stand']
-while True:
-
-    if choice3_left == 'run':
-        print("You turn and run for home but the hills slow you down")
-        print("The bear gains on you with surprising speed!")
-        print("You become the bear's dinner")
-        game_over()
-        break
-
-    if choice3_left == 'stay':
-        print("Every inch of your being screams at you to run.")
-        print("You remember from somewhere that you need to be still.")
-        print("You can feel the bear's breath on your neck!")
-        print("Just as you think it's curtains for you, the bear ambles away.")
-        you_win()
-        break
-    else:
-
-        choice3_left = input("Type 'run' to run away, or 'stand' to stand:")
-
-# choice3_right consequences
-choice3_right = ['jog', 'talk']
-while True:
-
-    if choice3_right == 'jog':
-        print("You watch way too much true crime to get close to that van!")
-        print("The driver door swings open as you jog past.")
-        print("A man with a crazed look in his eyes jumps out!")
-        you_win()
-
-    if choice3_right == 'talk':
-        print("You approach the driver's door just as he flings it open!")
-        print("You jump back but the driver is too fast for you.")
-        print("He grabs you and pulls you into the van with shocking speed!")
-        print("The homicidal maniac takes you back to his murder-house.")
-        game_over()
-
-    else:
-        choice3_right = input("Type 'jog' to go on or 'talk' to talk to him:")
