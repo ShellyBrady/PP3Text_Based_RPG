@@ -51,8 +51,8 @@ def intro():
 
 # choice1
 def choice1_result():
+    print(input("Type 'no' or type 'yes':"))
     choice1 = ['no', 'yes']
-    choice1 = input("Type 'no' or type 'yes':")
 # Action taken depending on input for choice1
     while True:
 
@@ -69,7 +69,7 @@ def choice1_result():
             play_again()
 
         else:
-            print(input("Type 'no' or type 'yes':"))
+            choice1 = input("Type 'no' or type 'yes':")
 
 
 def my_game():
@@ -78,8 +78,6 @@ def my_game():
     choice2 = ['left', 'right']
     choice3 = ['run', 'stand', 'jog', 'talk']
 
-    # call choice1
-    choice1_result()
     # Action dependant on Choice 2 input
     choice2 = input("Choose to go 'left' or 'right':")
     while True:
@@ -131,6 +129,8 @@ def my_game():
 
 
 intro()
+
+choice1_result()
 
 
 my_game()
