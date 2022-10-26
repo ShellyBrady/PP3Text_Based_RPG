@@ -78,6 +78,7 @@ def my_game():
     choice3 = ['run', 'stand', 'jog', 'talk']
     choice2 = input("Choose to go 'left' or 'right':")
 # Action dependant on Choice 2 input
+    intro()
     while True:
 
         if choice2 == 'left':
