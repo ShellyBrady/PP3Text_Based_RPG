@@ -85,7 +85,7 @@ while True:
             print("The bear gains on you with surprising speed!")
             print("You become the bear's dinner")
             game_over()
-        if choice3 == 'stay':
+        if choice3 == 'stand':
             print("Every inch of your being screams at you to run.")
             print("You remember from somewhere that you need to be still.")
             print("You can feel the bear's breath on your neck!")
