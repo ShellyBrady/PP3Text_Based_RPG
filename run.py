@@ -43,15 +43,14 @@ def intro():
     print("\nWell hello, " + name1 + "! Nice to meet you.")
     time.sleep(2)
     print("\nGood news, " + name1 + "! Time for a monthly guilt-induced run!")
-    print("\nPut on your barely worn runners and head for the door.\n")
-    print("Are you ready to go?")
     time.sleep(1)
 
 
 # choice1
 def choice1_result():
     choice1 = ['no', 'yes']
-
+    print("\nPut on your barely worn runners and head for the door.\n")
+    print("Are you ready to go?")
     choice1 = print("Type 'no' or type 'yes':")
     # Action taken depending on input for choice1
     while True:
