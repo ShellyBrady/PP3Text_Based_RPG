@@ -77,10 +77,11 @@ def my_game():
     # Choice lists
     choice2 = ['left', 'right']
     choice3 = ['run', 'stand', 'jog', 'talk']
-    choice2 = input("Choose to go 'left' or 'right':")
+
     # call choice1
     choice1_result()
     # Action dependant on Choice 2 input
+    choice2 = input("Choose to go 'left' or 'right':")
     while True:
 
         if choice2 == 'left':
