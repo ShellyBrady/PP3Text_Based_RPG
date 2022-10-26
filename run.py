@@ -115,5 +115,3 @@ while True:
             game_over()
         else:
             choice3 = input("Type 'jog' to go on or 'talk' to talk to him:")
-    else:
-        choice2 = input("Choose to go 'left' or 'right':")
