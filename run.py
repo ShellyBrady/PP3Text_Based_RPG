@@ -122,11 +122,12 @@ def my_game():
                 game_over()
             else:
                 choice3 = input("Type 'jog' to go on or 'talk' to talk: ")
+        else:
+            choice2 = input("Type 'no' or type 'yes':")
 
 
 intro()
 
 choice1_result()
-
 
 my_game()
