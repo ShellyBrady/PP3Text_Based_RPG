@@ -40,9 +40,9 @@ def intro():
     name1 = input("What shall I call you?\n")
 
 # Greeting and first question
-    print("\nWell hello, " + name1 + "! Nice to meet you.")
+    print("Hello, " + name1.capitalize() + "! Nice to meet you.")
     time.sleep(2)
-    print("\nGood news, " + name1 + "! Time for a monthly guilt-induced run!")
+    print("\nGood news! Its time for a monthly guilt-induced run!")
     time.sleep(1)
 
 
@@ -51,7 +51,7 @@ def choice1_result():
     choice1 = ['no', 'yes']
     print("\nPut on your barely worn runners and head for the door.\n")
     print("Are you ready to go?")
-    choice1 = print("Type 'no' or type 'yes':")
+
     # Action taken depending on input for choice1
     while True:
         if choice1 == 'yes':
