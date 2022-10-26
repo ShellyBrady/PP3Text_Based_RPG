@@ -51,8 +51,9 @@ def intro():
 
 # choice1
 def choice1_result():
-    print(input("Type 'no' or type 'yes':"))
     choice1 = ['no', 'yes']
+    choice1 = print("Type 'no' or type 'yes':")
+
 # Action taken depending on input for choice1
     while True:
 
