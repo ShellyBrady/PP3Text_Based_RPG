@@ -3,6 +3,7 @@ import time
 import sys
 import pyfiglet as pyg   # from javatpoint.com/python-pyfiglet-module
 res = pyg.figlet_format("JOG ON")
+print(res)
 
 
 # 'Play again' question to be posed when game is ended
@@ -30,22 +31,22 @@ def game_over():
 
 # Winning is getting home safe in one piece!
 def you_win():
-    time.sleep(1)
+    time.sleep(2)
     print("\nYou run for home faster than you have ever run before!\n")
-    time.sleep(1)
+    time.sleep(2)
     print("You fling open the door and kick your runners off with relief.\n")
-    time.sleep(1)
+    time.sleep(2)
     print("Congratulate yourself for making it through another monthly jog.\n")
-    time.sleep(1)
+    time.sleep(2)
     print("\n******************YOU SURVIVED******************\n")
-    time.sleep(1)
+    time.sleep(2)
     play_again()
 
 
 # Opening intro and input name
 def intro():
     print("*********Welcome to Your Next Adventure!*********\n")
-    time.sleep(1)
+    time.sleep(2)
     print("Every decision you make will determine how your story goes.\n")
     time.sleep(2)
     name1 = input("What shall I call you? ")
@@ -54,7 +55,7 @@ def intro():
     print("Hello, " + name1.capitalize() + "! Nice to meet you.")
     time.sleep(2)
     print("\nGood news! Its time for a monthly guilt-induced run!")
-    time.sleep(1)
+    time.sleep(2)
 
 
 # choice1
@@ -71,13 +72,13 @@ def choice1_result():
             print("\nHead for the quiet county road at the end of your drive.")
             time.sleep(2)
             print("\nLeft brings you to a hilly road surrounded by fields.")
-            time.sleep(1)
+            time.sleep(2)
             print("Right brings you from quiet village to the busy main road.")
             time.sleep(2)
             break
         if choice1 == 'no':
             print("\n*****Maybe tomorrow. It looks like it might rain.*****\n")
-            time.sleep(1)
+            time.sleep(2)
             game_over()
         else:
             choice1 = input("Type 'no' or type 'yes': ")
@@ -107,52 +108,52 @@ def my_game():
             choice3 = input("Type 'run' to run away, or 'stand' to stand: ")
             if choice3 == 'run':
                 print("You turn and run for home but the hills slow you down.")
-                time.sleep(2)
+                time.sleep(3)
                 print("\nThe bear gains on you with surprising speed!\n")
-                time.sleep(2)
+                time.sleep(3)
                 print("You become the bear's dinner\n")
-                time.sleep(2)
+                time.sleep(3)
                 game_over()
             if choice3 == 'stand':
                 print("Every inch of your being screams at you to run.\n")
-                time.sleep(2)
+                time.sleep(3)
                 print("You remember from somewhere that you need to be still.")
-                time.sleep(2)
+                time.sleep(3)
                 print('\n....')
-                time.sleep(1)
+                time.sleep(3)
                 print("\nYou can feel the bear's breath on your neck!\n")
-                time.sleep(2)
+                time.sleep(3)
                 print("You think it's ended for you but the bear ambles off!")
-                time.sleep(1)
+                time.sleep(3)
                 you_win()
             else:
                 choice3 = input("Type 'run' to run away, or 'stand' to stand:")
         if choice2 == 'right':
             print("\nRight you are! Keep a steady pace.\n")
-            time.sleep(1)
+            time.sleep(2)
             print("\nAt the end of the sleepy street you reach the main road.")
             print("\nCars whizz past as you jog on to the hard shoulder.\n")
-            time.sleep(1)
+            time.sleep(3)
             print("Suddenly, a white van screeches to a halt in front of you!")
-            time.sleep(1)
+            time.sleep(3)
             choice3 = input("Type 'jog' to go on or 'talk' to talk to him: ")
             if choice3 == 'jog':
                 print("You watch too much true crime to get close to the van!")
-                time.sleep(1)
+                time.sleep(3)
                 print("The driver door swings open as you jog past.")
-                time.sleep(1)
+                time.sleep(3)
                 print("A man with a crazed look in his eyes jumps out!")
-                time.sleep(1)
+                time.sleep(3)
                 you_win()
             if choice3 == 'talk':
                 print("You approach the driver's door just as it flings open!")
-                time.sleep(1)
+                time.sleep(3)
                 print("You jump back but the driver is too fast for you.")
-                time.sleep(1)
+                time.sleep(3)
                 print("He pulls you into the van with sudden speed!")
-                time.sleep(2)
+                time.sleep(3)
                 print("The homicidal maniac takes you to his murder-house.")
-                time.sleep(1)
+                time.sleep(3)
                 game_over()
             else:
                 choice3 = input("Type 'jog' to go on or 'talk' to talk: ")
