@@ -161,7 +161,8 @@ def my_game():
             time.sleep(3)
             game_over()
         else:
-                choice3 = input("Type 'jog' to go on or 'talk' to talk: ")
+            choice3 = input("Type 'jog' to go on or 'talk' to talk: ")
+
 
 intro()
 
