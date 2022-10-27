@@ -118,7 +118,7 @@ def my_game():
             choice2 = input("Choose to go 'left' or 'right': ")
 
     while True:
-        if choice3 == 'run':
+        if choice3 == 'run' and choice2 == 'left':
             print("You turn and run for home but the hills slow you down.")
             time.sleep(3)
             print("\nThe bear gains on you with surprising speed!\n")
@@ -126,7 +126,7 @@ def my_game():
             print("You become the bear's dinner\n")
             time.sleep(3)
             game_over()
-        if choice3 == 'stand':
+        elif choice3 == 'stand' and choice2 == 'left':
             print("Every inch of your being screams at you to run.\n")
             time.sleep(3)
             print("You remember from somewhere that you need to be still.")
@@ -142,7 +142,7 @@ def my_game():
             choice3 = input("Type 'run' to run away, or 'stand' to stand:")
 
     while True:
-        if choice3 == 'jog':
+        if choice3 == 'jog' and choice2 == 'right':
             print("You watch too much true crime to get close to the van!")
             time.sleep(3)
             print("The driver door swings open as you jog past.")
@@ -150,7 +150,7 @@ def my_game():
             print("A man with a crazed look in his eyes jumps out!")
             time.sleep(3)
             you_win()
-        if choice3 == 'talk':
+        elif choice3 == 'talk' and choice2 == 'right':
             print("You approach the driver's door just as it flings open!")
             time.sleep(3)
             print("You jump back but the driver is too fast for you.")
