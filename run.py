@@ -1,9 +1,9 @@
 # Import sleep from time to add delays between strings
 import time
 import sys
-import pyfiglet as pyg   # from javatpoint.com/python-pyfiglet-module
-res = pyg.figlet_format("JOG ON")
-print(res)
+import pyfiglet
+result = pyfiglet.figlet_format("JOG ON", font="digital")
+print(result)
 
 
 # 'Play again' question to be posed when game is ended
