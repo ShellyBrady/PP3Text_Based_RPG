@@ -65,13 +65,13 @@ def choice1_result():
     while True:
         if choice1 == 'yes':
             print("\nBetter get going before it starts to get dark!\n")
-            time.sleep(1)
+            time.sleep(3)
             print("\nHead for the quiet county road at the end of your drive.")
-            time.sleep(2)
+            time.sleep(3)
             print("\nLeft brings you to a hilly road surrounded by fields.")
-            time.sleep(2)
+            time.sleep(3)
             print("Right brings you from quiet village to the busy main road.")
-            time.sleep(2)
+            time.sleep(3)
             break
         if choice1 == 'no':
             print("\n*****Maybe tomorrow. It looks like it might rain.*****\n")
@@ -103,28 +103,6 @@ def my_game():
             print("\nYour heart pounds-you see a bear lumbering towards you!")
             time.sleep(2)
             choice3 = input("Type 'run' to run away, or 'stand' to stand: ")
-            if choice3 == 'run':
-                print("You turn and run for home but the hills slow you down.")
-                time.sleep(3)
-                print("\nThe bear gains on you with surprising speed!\n")
-                time.sleep(3)
-                print("You become the bear's dinner\n")
-                time.sleep(3)
-                game_over()
-            if choice3 == 'stand':
-                print("Every inch of your being screams at you to run.\n")
-                time.sleep(3)
-                print("You remember from somewhere that you need to be still.")
-                time.sleep(3)
-                print('\n....')
-                time.sleep(3)
-                print("\nYou can feel the bear's breath on your neck!\n")
-                time.sleep(3)
-                print("You think it's ended for you but the bear ambles off!")
-                time.sleep(3)
-                you_win()
-            else:
-                choice3 = input("Type 'run' to run away, or 'stand' to stand:")
         if choice2 == 'right':
             print("\nRight you are! Keep a steady pace.\n")
             time.sleep(2)
@@ -134,29 +112,53 @@ def my_game():
             print("Suddenly, a white van screeches to a halt in front of you!")
             time.sleep(3)
             choice3 = input("Type 'jog' to go on or 'talk' to talk to him: ")
-            if choice3 == 'jog':
-                print("You watch too much true crime to get close to the van!")
-                time.sleep(3)
-                print("The driver door swings open as you jog past.")
-                time.sleep(3)
-                print("A man with a crazed look in his eyes jumps out!")
-                time.sleep(3)
-                you_win()
-            if choice3 == 'talk':
-                print("You approach the driver's door just as it flings open!")
-                time.sleep(3)
-                print("You jump back but the driver is too fast for you.")
-                time.sleep(3)
-                print("He pulls you into the van with sudden speed!")
-                time.sleep(3)
-                print("The homicidal maniac takes you to his murder-house.")
-                time.sleep(3)
-                game_over()
-            else:
-                choice3 = input("Type 'jog' to go on or 'talk' to talk: ")
         else:
             choice2 = input("Choose to go 'left' or 'right': ")
 
+    while True:
+        if choice3 == 'run':
+            print("You turn and run for home but the hills slow you down.")
+            time.sleep(3)
+            print("\nThe bear gains on you with surprising speed!\n")
+            time.sleep(3)
+            print("You become the bear's dinner\n")
+            time.sleep(3)
+            game_over()
+        if choice3 == 'stand':
+            print("Every inch of your being screams at you to run.\n")
+            time.sleep(3)
+            print("You remember from somewhere that you need to be still.")
+            time.sleep(3)
+            print('\n....')
+            time.sleep(3)
+            print("\nYou can feel the bear's breath on your neck!\n")
+            time.sleep(3)
+            print("You think it's ended for you but the bear ambles off!")
+            time.sleep(3)
+            you_win()
+        else:
+            choice3 = input("Type 'run' to run away, or 'stand' to stand:")
+
+        if choice3 == 'jog':
+            print("You watch too much true crime to get close to the van!")
+            time.sleep(3)
+            print("The driver door swings open as you jog past.")
+            time.sleep(3)
+            print("A man with a crazed look in his eyes jumps out!")
+            time.sleep(3)
+            you_win()
+        if choice3 == 'talk':
+            print("You approach the driver's door just as it flings open!")
+            time.sleep(3)
+            print("You jump back but the driver is too fast for you.")
+            time.sleep(3)
+            print("He pulls you into the van with sudden speed!")
+            time.sleep(3)
+            print("The homicidal maniac takes you to his murder-house.")
+            time.sleep(3)
+            game_over()
+        else:
+                choice3 = input("Type 'jog' to go on or 'talk' to talk: ")
 
 intro()
 
