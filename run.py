@@ -124,7 +124,7 @@ def my_game():
                 time.sleep(3)
                 you_win()
             else:
-                choice3 = input("Type 'run' to run away, or 'stand' to stand:")              
+                choice3 = input("Type 'run' to run away, or 'stand' to stand:")
         if choice2 == 'right':
             print("\nRight you are! Keep a steady pace.\n")
             time.sleep(2)
