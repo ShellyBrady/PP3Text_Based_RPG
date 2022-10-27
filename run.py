@@ -103,6 +103,7 @@ def my_game():
             print("\nYour heart pounds-you see a bear lumbering towards you!")
             time.sleep(2)
             choice3 = input("Type 'run' to run away, or 'stand' to stand: ")
+            break
         if choice2 == 'right':
             print("\nRight you are! Keep a steady pace.\n")
             time.sleep(2)
@@ -112,6 +113,7 @@ def my_game():
             print("Suddenly, a white van screeches to a halt in front of you!")
             time.sleep(3)
             choice3 = input("Type 'jog' to go on or 'talk' to talk to him: ")
+            break
         else:
             choice2 = input("Choose to go 'left' or 'right': ")
 
@@ -139,6 +141,7 @@ def my_game():
         else:
             choice3 = input("Type 'run' to run away, or 'stand' to stand:")
 
+    while True:
         if choice3 == 'jog':
             print("You watch too much true crime to get close to the van!")
             time.sleep(3)
